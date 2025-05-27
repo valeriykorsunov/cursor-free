@@ -1,211 +1,209 @@
-# 🚀 Cursor Free Trial Reset Tool
+# 🚀 Инструмент для сброса пробного периода Cursor
 
 <div align="center">
 
-[![Release](https://img.shields.io/github/v/release/yuaotian/go-cursor-help?style=flat-square&logo=github&color=blue)](https://github.com/yuaotian/go-cursor-help/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=bookstack)](https://github.com/yuaotian/go-cursor-help/blob/master/LICENSE)
-[![Stars](https://img.shields.io/github/stars/yuaotian/go-cursor-help?style=flat-square&logo=github)](https://github.com/yuaotian/go-cursor-help/stargazers)
+[![Релиз](https://img.shields.io/github/v/release/yuaotian/go-cursor-help?style=flat-square&logo=github&color=blue)](https://github.com/yuaotian/go-cursor-help/releases/latest)
+[![Лицензия](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&logo=bookstack)](https://github.com/yuaotian/go-cursor-help/blob/master/LICENSE)
+[![Звезды](https://img.shields.io/github/stars/yuaotian/go-cursor-help?style=flat-square&logo=github)](https://github.com/yuaotian/go-cursor-help/stargazers)
 
 [🌟 English](README.md) | [🌏 中文](README_CN.md) | [🌏 日本語](README_JP.md)
 
-<img src="https://ai-cursor.com/wp-content/uploads/2024/09/logo-cursor-ai-png.webp" alt="Cursor Logo" width="120"/>
+<img src="https://ai-cursor.com/wp-content/uploads/2024/09/logo-cursor-ai-png.webp" alt="Логотип Cursor" width="120"/>
 
 </div>
 
-> ⚠️ **IMPORTANT NOTICE**
+> ⚠️ **ВАЖНОЕ УВЕДОМЛЕНИЕ**
 > 
-> This tool currently supports:
-> - ✅ Windows: Latest 0.49.x versions (Supported)
-> - ✅ Mac/Linux: Latest 0.49.x versions (Supported, feedback welcome)
+> Этот инструмент поддерживает:
+> - ✅ Windows: Последние версии 0.49.x (поддерживаются)
+> - ✅ Mac/Linux: Последние версии 0.49.x (поддерживаются, приветствуется обратная связь)
 >
-> Please check your Cursor version before using this tool.
+> Перед использованием убедитесь, что ваша версия Cursor совместима с инструментом.
 
 <details open>
-<summary><b>📦 Version History & Downloads</b></summary>
+<summary><b>📦 История версий и загрузки</b></summary>
 
 <div class="version-card" style="background: linear-gradient(135deg, #6e8efb, #a777e3); border-radius: 8px; padding: 15px; margin: 10px 0; color: white;">
 
-### 🌟 Latest Versions
+### 🌟 Последние версии
 
-[View Full Version History]([CursorHistoryDown.md](https://github.com/oslook/cursor-ai-downloads?tab=readme-ov-file))
+[Посмотреть полную историю версий](https://github.com/oslook/cursor-ai-downloads?tab=readme-ov-file)
 
 </div>
 
-
-
 </details>
 
-⚠️ **General Solutions for Cursor**
-> 1.  Close Cursor, log out of your account, and delete your account in the official website Settings (refresh IP node: Japan, Singapore, USA, Hong Kong, prioritizing low latency - not necessarily required but change if conditions allow; Windows users are recommended to refresh DNS cache: `ipconfig /flushdns`)
-> Go to the Cursor official website to delete your current account
-> Steps: User avatar -> Setting -> Advanced▼ in the bottom left -> Delete Account
+⚠️ **Общие решения для Cursor**
+> 1.  Закройте Cursor, выйдите из учетной записи и удалите её на официальном сайте (обновите IP-адрес: Япония, Сингапур, США, Гонконг, приоритет низкой задержке - не обязательно, но рекомендуется; для пользователей Windows рекомендуется очистить кэш DNS: `ipconfig /flushdns`)
+> Перейдите на официальный сайт Cursor, чтобы удалить текущую учетную запись
+> Шаги: Аватар пользователя -> Настройки -> Дополнительно▼ внизу слева -> Удалить учетную запись
 >
-> 2.  Run the machine code refresh script, see the script address below, available in China
+> 2.  Запустите скрипт обновления кода машины, см. адрес скрипта ниже, доступен в Китае
 > 
-> 3.  Re-register an account, log in, and open Cursor to resume normal use.
+> 3.  Зарегистрируйте новую учетную запись, войдите в систему и откройте Cursor для продолжения использования.
 >
-> 4.  Alternative solution: If still unusable after step [**3**], or if you encounter problems such as account registration failure or inability to delete an account, this usually means your browser has been identified or restricted by the target website (risk control). In this case, try switching browsers, such as: Edge, Google Chrome, Firefox. (Or, consider using a browser that can modify or randomize browser fingerprint information).
+> 4.  Альтернативное решение: Если после шага [**3**] Cursor все еще не работает, или если вы столкнулись с проблемами, такими как невозможность регистрации учетной записи или удаления учетной записи, это обычно означает, что ваш браузер был идентифицирован или ограничен целевым сайтом (контроль риска). В этом случае попробуйте сменить браузер, например: Edge, Google Chrome, Firefox. (Или рассмотрите возможность использования браузера, который может изменять или рандомизировать информацию о браузере).
 
 
 ---
 
-⚠️ **MAC Address Modification Warning**
+⚠️ **Предупреждение о модификации MAC-адреса**
 > 
-> For Mac users: This script includes a MAC address modification feature that will:
-> - Modify your network interface's MAC address
-> - Backup original MAC addresses before modification
-> - This modification may temporarily affect network connectivity
-> - You can skip this step when prompted during execution
+> Для пользователей Mac: Этот скрипт включает функцию модификации MAC-адреса, которая:
+> - Изменит MAC-адрес вашего сетевого интерфейса
+> - Создаст резервную копию оригинальных MAC-адресов перед изменением
+> - Это изменение может временно повлиять на сетевое подключение
+> - Вы можете пропустить этот шаг при выполнении скрипта
 >
 
 <details >
-<summary><b>🔒 Disable Auto-Update Feature</b></summary>
+<summary><b>🔒 Отключение функции автоматического обновления</b></summary>
 
-> To prevent Cursor from automatically updating to unsupported new versions, you can choose to disable the auto-update feature.
+> Чтобы предотвратить автоматическое обновление Cursor до неподдерживаемых новых версий, вы можете отключить функцию автоматического обновления.
 
-#### Method 1: Using Built-in Script (Recommended)
+#### Метод 1: Использование встроенного скрипта (рекомендуется)
 
-When running the reset tool, the script will ask if you want to disable auto-updates:
+При запуске инструмента сброса скрипт спросит, хотите ли вы отключить автоматическое обновление:
 ```text
-[Question] Do you want to disable Cursor auto-update feature?
-0) No - Keep default settings (Press Enter)
-1) Yes - Disable auto-update
+[Вопрос] Хотите отключить функцию автоматического обновления Cursor?
+0) Нет - Оставить настройки по умолчанию (нажмите Enter)
+1) Да - Отключить автоматическое обновление
 ```
 
-Select `1` to automatically complete the disable operation.
+Выберите `1`, чтобы автоматически завершить операцию отключения.
 
-#### Method 2: Manual Disable
+#### Метод 2: Ручное отключение
 
 **Windows:**
-1. Close all Cursor processes
-2. Delete directory: `%LOCALAPPDATA%\cursor-updater`
-3. Create a file with the same name (without extension) in the same location
+1. Закройте все процессы Cursor
+2. Удалите каталог: `%LOCALAPPDATA%\cursor-updater`
+3. Создайте файл с тем же именем (без расширения) в том же месте
 
 **macOS:**
 ```bash
-# NOTE: As tested, this method only works for version 0.45.11 and below.
-# Close Cursor
+# ПРИМЕЧАНИЕ: По результатам тестирования, этот метод работает только для версии 0.45.11 и ниже.
+# Закройте Cursor
 pkill -f "Cursor"
-# Replacing app-update.yml with a blank/read-only file
+# Замените app-update.yml пустым/только для чтения файлом
 cd /Applications/Cursor.app/Contents/Resources
 mv app-update.yml app-update.yml.bak
 touch app-update.yml
 chmod 444 app-update.yml
 
-# Go to Settings -> Application -> Update, set Mode to none.
-# This must be done to prevent Cursor from checking for updates.
+# Перейдите в Настройки -> Приложение -> Обновление, установите Режим в none.
+# Это необходимо сделать, чтобы предотвратить проверку обновлений Cursor.
 
-# NOTE: The cursor-updater modification method may no longer be effective
-# In any case, remove update directory and create blocking file
+# ПРИМЕЧАНИЕ: Метод модификации cursor-updater может больше не быть эффективным
+# В любом случае, удалите каталог обновлений и создайте блокирующий файл
 rm -rf ~/Library/Application\ Support/Caches/cursor-updater
 touch ~/Library/Application\ Support/Caches/cursor-updater
 ```
 
 **Linux:**
 ```bash
-# Close Cursor
+# Закройте Cursor
 pkill -f "Cursor"
-# Remove update directory and create blocking file
+# Удалите каталог обновлений и создайте блокирующий файл
 rm -rf ~/.config/cursor-updater
 touch ~/.config/cursor-updater
 ```
 
-> ⚠️ **Note:** After disabling auto-updates, you'll need to manually download and install new versions. It's recommended to update only after confirming the new version is compatible.
+> ⚠️ **Примечание:** После отключения автоматических обновлений вам нужно будет вручную загружать и устанавливать новые версии. Рекомендуется обновляться только после подтверждения совместимости новой версии.
 
 
 </details>
 
 ---
 
-### 📝 Description
+### 📝 Описание
 
-> When you encounter any of these messages:
+> Когда вы сталкиваетесь с любым из этих сообщений:
 
-#### Issue 1: Trial Account Limit <p align="right"><a href="#issue1"><img src="https://img.shields.io/badge/Move%20to%20Solution-Blue?style=plastic" alt="Back To Top"></a></p>
+#### Проблема 1: Лимит пробной учетной записи <p align="right"><a href="#issue1"><img src="https://img.shields.io/badge/Move%20to%20Solution-Blue?style=plastic" alt="Back To Top"></a></p>
 
 ```text
-Too many free trial accounts used on this machine.
-Please upgrade to pro. We have this limit in place
-to prevent abuse. Please let us know if you believe
-this is a mistake.
+Слишком много использованных пробных учетных записей на этом устройстве.
+Пожалуйста, обновитесь до Pro. Мы установили этот лимит
+для предотвращения злоупотреблений. Пожалуйста, дайте нам знать, если вы считаете,
+что это ошибка.
 ```
 
-#### Issue 2: API Key Limitation <p align="right"><a href="#issue2"><img src="https://img.shields.io/badge/Move%20to%20Solution-green?style=plastic" alt="Back To Top"></a></p>
+#### Проблема 2: Ограничение API-ключа <p align="right"><a href="#issue2"><img src="https://img.shields.io/badge/Move%20to%20Solution-green?style=plastic" alt="Back To Top"></a></p>
 
 ```text
-[New Issue]
+[Новая проблема]
 
-Composer relies on custom models that cannot be billed to an API key.
-Please disable API keys and use a Pro or Business subscription.
-Request ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+Composer полагается на пользовательские модели, которые не могут быть оплачены с помощью API-ключа.
+Пожалуйста, отключите API-ключи и используйте подписку Pro или Business.
+ID запроса: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
-#### Issue 3: Trial Request Limit
+#### Проблема 3: Лимит запросов пробного периода
 
-> This indicates you've reached the usage limit during the VIP free trial period:
+> Это указывает на то, что вы достигли лимита использования в течение VIP пробного периода:
 
 ```text
-You've reached your trial request limit.
+Вы достигли лимита запросов пробного периода.
 ```
 
-#### Issue 4: Claude 3.7 High Load <p align="right"><a href="#issue4"><img src="https://img.shields.io/badge/Move%20to%20Solution-purple?style=plastic" alt="Back To Top"></a></p>
+#### Проблема 4: Высокая нагрузка Claude 3.7 <p align="right"><a href="#issue4"><img src="https://img.shields.io/badge/Move%20to%20Solution-purple?style=plastic" alt="Back To Top"></a></p>
 
 ```text
-High Load 
-We're experiencing high demand for Claude 3.7 Sonnet right now. Please upgrade to Pro, or switch to the
-'default' model, Claude 3.5 sonnet, another model, or try again in a few moments.
+Высокая нагрузка 
+В настоящее время мы испытываем высокий спрос на Claude 3.7 Sonnet. Пожалуйста, обновитесь до Pro или переключитесь на
+'стандартную' модель, Claude 3.5 sonnet, другую модель или попробуйте снова через несколько минут.
 ```
 
 <br>
 
 <p id="issue2"></p>
 
-#### Solution : Uninstall Cursor Completely And Reinstall (API key Issue)
+#### Решение: Полное удаление Cursor и переустановка (проблема с API-ключом)
 
-1. Download [Geek.exe Uninstaller[Free]](https://geekuninstaller.com/download)
-2. Uninstall Cursor app completely
-3. Re-Install Cursor app
-4. Continue to Solution 1
+1. Загрузите [Geek.exe Uninstaller[Free]](https://geekuninstaller.com/download)
+2. Полностью удалите приложение Cursor
+3. Переустановите приложение Cursor
+4. Продолжите к Решению 1
 
 <br>
 
 <p id="issue1"></p>
 
-> Temporary Solution:
+> Временное решение:
 
-#### Solution 1: Quick Reset (Recommended)
+#### Решение 1: Быстрый сброс (рекомендуется)
 
-1. Close Cursor application
-2. Run the machine code reset script (see installation instructions below)
-3. Reopen Cursor to continue using
+1. Закройте приложение Cursor
+2. Запустите скрипт сброса кода машины (см. инструкции по установке ниже)
+3. Откройте Cursor снова для продолжения использования
 
-#### Solution 2: Account Switch
+#### Решение 2: Смена учетной записи
 
-1. File -> Cursor Settings -> Sign Out
-2. Close Cursor
-3. Run the machine code reset script
-4. Login with a new account
+1. Файл -> Настройки Cursor -> Выйти
+2. Закройте Cursor
+3. Запустите скрипт сброса кода машины
+4. Войдите с новой учетной записью
 
-#### Solution 3: Network Optimization
+#### Решение 3: Оптимизация сети
 
-If the above solutions don't work, try:
+Если вышеуказанные решения не работают, попробуйте:
 
-- Switch to low-latency nodes (Recommended regions: Japan, Singapore, US, Hong Kong)
-- Ensure network stability
-- Clear browser cache and retry
+- Переключитесь на узлы с низкой задержкой (рекомендуемые регионы: Япония, Сингапур, США, Гонконг)
+- Обеспечьте стабильность сети
+- Очистите кэш браузера и повторите попытку
 
-#### Solution 4: Claude 3.7 Access Issue (High Load)
+#### Решение 4: Проблема доступа к Claude 3.7 (высокая нагрузка)
 
-If you see the "High Load" message for Claude 3.7 Sonnet, this indicates Cursor is limiting free trial accounts from using the 3.7 model during certain times of the day. Try:
+Если вы видите сообщение "Высокая нагрузка" для Claude 3.7 Sonnet, это указывает на то, что Cursor ограничивает использование модели 3.7 для пробных учетных записей в определенные часы дня. Попробуйте:
 
-1. Switch to a new account created with Gmail, possibly connecting through a different IP address
-2. Try accessing during off-peak hours (typically 5-10 AM or 3-7 PM when restrictions are often lighter)
-3. Consider upgrading to Pro for guaranteed access
-4. Use Claude 3.5 Sonnet as a fallback option
+1. Переключитесь на новую учетную запись, созданную с помощью Gmail, возможно, подключившись через другой IP-адрес
+2. Попробуйте получить доступ в непиковые часы (обычно с 5 до 10 утра или с 3 до 7 вечера, когда ограничения часто менее строгие)
+3. Рассмотрите возможность обновления до Pro для гарантированного доступа
+4. Используйте Claude 3.5 Sonnet в качестве резервного варианта
 
-> Note: These access patterns may change as Cursor adjusts their resource allocation policies.
+> Примечание: Эти шаблоны доступа могут изменяться по мере того, как Cursor корректирует свою политику распределения ресурсов.
 
-### 💻 System Support
+### 💻 Поддержка систем
 
 <table>
 <tr>
@@ -213,8 +211,8 @@ If you see the "High Load" message for Claude 3.7 Sonnet, this indicates Cursor 
 
 **Windows** ✅
 
-- x64 (64-bit)
-- x86 (32-bit)
+- x64 (64-бит)
+- x86 (32-бит)
 
 </td>
 <td>
@@ -229,23 +227,23 @@ If you see the "High Load" message for Claude 3.7 Sonnet, this indicates Cursor 
 
 **Linux** ✅
 
-- x64 (64-bit)
-- x86 (32-bit)
+- x64 (64-бит)
+- x86 (32-бит)
 - ARM64
 
 </td>
 </tr>
 </table>
 
-### 🚀 One-Click Solution
+### 🚀 Решение в один клик
 
 <details open>
-<summary><b>Global Users</b></summary>
+<summary><b>Глобальные пользователи</b></summary>
 
 **macOS**
 
 ```bash
-# Method two
+# Метод два
 curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_mac_id_modifier.sh -o ./cursor_mac_id_modifier.sh && sudo bash ./cursor_mac_id_modifier.sh && rm ./cursor_mac_id_modifier.sh
 ```
 
@@ -255,7 +253,7 @@ curl -fsSL https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com
 curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_linux_id_modifier.sh | sudo bash 
 ```
 
-> **Note for Linux users:** The script attempts to find your Cursor installation by checking common paths (`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`), using the `which cursor` command, and searching within `/usr`, `/opt`, and `$HOME/.local`. If Cursor is installed elsewhere or not found via these methods, the script may fail. Ensure Cursor is accessible via one of these standard locations or methods.
+> **Примечание для пользователей Linux:** Скрипт пытается найти вашу установку Cursor, проверяя общие пути (`/usr/bin`, `/usr/local/bin`, `$HOME/.local/bin`, `/opt/cursor`, `/snap/bin`), используя команду `which cursor` и выполняя поиск в `/usr`, `/opt` и `$HOME/.local`. Если Cursor установлен в другом месте или не найден этими методами, скрипт может завершиться неудачей. Убедитесь, что Cursor доступен через одно из этих стандартных мест или методов.
 
 **Windows**
 
@@ -270,7 +268,7 @@ irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/
 </details>
 
 <details open>
-<summary><b>China Users (Recommended)</b></summary>
+<summary><b>Пользователи из Китая (рекомендуется)</b></summary>
 
 **macOS**
 
@@ -293,111 +291,111 @@ irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaoti
 </details>
 
 <details open>
-<summary><b>Windows Terminal Run and Configuration</b></summary>
+<summary><b>Запуск и настройка Windows Terminal</b></summary>
 
-#### How to Open Administrator Terminal in Windows:
+#### Как открыть терминал администратора в Windows:
 
-##### Method 1: Using Win + X Shortcut
+##### Метод 1: Использование сочетания клавиш Win + X
 ```md
-1. Press Win + X key combination
-2. Select one of these options from the menu:
-   - "Windows PowerShell (Administrator)"
-   - "Windows Terminal (Administrator)"
-   - "Terminal (Administrator)"
-   (Options may vary depending on Windows version)
+1. Нажмите сочетание клавиш Win + X
+2. Выберите один из следующих вариантов в меню:
+   - "Windows PowerShell (Администратор)"
+   - "Windows Terminal (Администратор)"
+   - "Terminal (Администратор)"
+   (Варианты могут отличаться в зависимости от версии Windows)
 ```
 
-##### Method 2: Using Win + R Run Command
+##### Метод 2: Использование команды Win + R Run
 ```md
-1. Press Win + R key combination
-2. Type powershell or pwsh in the Run dialog
-3. Press Ctrl + Shift + Enter to run as administrator
-   or type in the opened window: Start-Process pwsh -Verb RunAs
-4. Enter the reset script in the administrator terminal:
+1. Нажмите сочетание клавиш Win + R
+2. Введите powershell или pwsh в диалоговом окне Run
+3. Нажмите Ctrl + Shift + Enter для запуска от имени администратора
+   или введите в открывшемся окне: Start-Process pwsh -Verb RunAs
+4. Введите скрипт сброса в терминале администратора:
 
 irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
 
-##### Method 3: Using Search
+##### Метод 3: Использование поиска
 >![Search PowerShell](img/pwsh_1.png)
 >
->Type pwsh in the search box, right-click and select "Run as administrator"
+>Введите pwsh в поисковую строку, щелкните правой кнопкой мыши и выберите "Запуск от имени администратора"
 >![Run as Administrator](img/pwsh_2.png)
 
-Enter the reset script in the administrator terminal:
+Введите скрипт сброса в терминале администратора:
 ```powershell
 irm https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go-cursor-help/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | iex
 ```
 
-### 🔧 PowerShell Installation Guide 
+### 🔧 Руководство по установке PowerShell 
 
-If PowerShell is not installed on your system, you can install it using one of these methods:
+Если PowerShell не установлен на вашей системе, вы можете установить его одним из следующих способов:
 
-#### Method 1: Install via Winget (Recommended)
+#### Метод 1: Установка через Winget (рекомендуется)
 
-1. Open Command Prompt or PowerShell
-2. Run the following command:
+1. Откройте командную строку или PowerShell
+2. Выполните следующую команду:
 ```powershell
 winget install --id Microsoft.PowerShell --source winget
 ```
 
-#### Method 2: Manual Installation
+#### Метод 2: Ручная установка
 
-1. Download the installer for your system:
-   - [PowerShell-7.4.6-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x64.msi) (64-bit systems)
-   - [PowerShell-7.4.6-win-x86.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x86.msi) (32-bit systems)
-   - [PowerShell-7.4.6-win-arm64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-arm64.msi) (ARM64 systems)
+1. Загрузите установочный файл для вашей системы:
+   - [PowerShell-7.4.6-win-x64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x64.msi) (64-битные системы)
+   - [PowerShell-7.4.6-win-x86.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-x86.msi) (32-битные системы)
+   - [PowerShell-7.4.6-win-arm64.msi](https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/PowerShell-7.4.6-win-arm64.msi) (ARM64 системы)
 
-2. Double-click the downloaded installer and follow the installation prompts
+2. Дважды щелкните загруженный установочный файл и следуйте инструкциям по установке
 
-> 💡 If you encounter any issues, please refer to the [Microsoft Official Installation Guide](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
+> 💡 Если у вас возникли проблемы, обратитесь к [официальному руководству по установке Microsoft](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
 
 </details>
 
-#### Windows 安装特性:
+#### Windows Установка:
 
-- 🔍 Automatically detects and uses PowerShell 7 if available
-- 🛡️ Requests administrator privileges via UAC prompt
-- 📝 Falls back to Windows PowerShell if PS7 isn't found
-- 💡 Provides manual instructions if elevation fails
+- 🔍 Автоматически обнаруживает и использует PowerShell 7, если он доступен
+- 🛡️ Запрашивает права администратора через UAC
+- 📝 Переходит на Windows PowerShell, если PS7 не найден
+- 💡 Предоставляет ручные инструкции, если повышение прав не удалось
 
-That's it! The script will:
+Вот и все! Скрипт выполнит:
 
-1. ✨ Install the tool automatically
-2. 🔄 Reset your Cursor trial immediately
+1. ✨ Автоматическую установку инструмента
+2. 🔄 Немедленный сброс пробного периода Cursor
 
-### 📦 Manual Installation
+### 📦 Ручная установка
 
-> Download the appropriate file for your system from [releases](https://github.com/yuaotian/go-cursor-help/releases/latest)
+> Загрузите соответствующий файл для вашей системы из [релизов](https://github.com/yuaotian/go-cursor-help/releases/latest)
 
 <details>
-<summary>Windows Packages</summary>
+<summary>Пакеты для Windows</summary>
 
-- 64-bit: `cursor-id-modifier_windows_x64.exe`
-- 32-bit: `cursor-id-modifier_windows_x86.exe`
+- 64-бит: `cursor-id-modifier_windows_x64.exe`
+- 32-бит: `cursor-id-modifier_windows_x86.exe`
 </details>
 
 <details>
-<summary>macOS Packages</summary>
+<summary>Пакеты для macOS</summary>
 
 - Intel: `cursor-id-modifier_darwin_x64_intel`
 - M1/M2: `cursor-id-modifier_darwin_arm64_apple_silicon`
 </details>
 
 <details>
-<summary>Linux Packages</summary>
+<summary>Пакеты для Linux</summary>
 
-- 64-bit: `cursor-id-modifier_linux_x64`
-- 32-bit: `cursor-id-modifier_linux_x86`
+- 64-бит: `cursor-id-modifier_linux_x64`
+- 32-бит: `cursor-id-modifier_linux_x86`
 - ARM64: `cursor-id-modifier_linux_arm64`
 </details>
 
-### 🔧 Technical Details
+### 🔧 Технические детали
 
 <details>
-<summary><b>Configuration Files</b></summary>
+<summary><b>Конфигурационные файлы</b></summary>
 
-The program modifies Cursor's `storage.json` config file located at:
+Программа изменяет конфигурационный файл `storage.json` Cursor, расположенный по адресу:
 
 - Windows: `%APPDATA%\Cursor\User\globalStorage\storage.json`
 - macOS: `~/Library/Application Support/Cursor/User/globalStorage/storage.json`
@@ -405,9 +403,9 @@ The program modifies Cursor's `storage.json` config file located at:
 </details>
 
 <details>
-<summary><b>Modified Fields</b></summary>
+<summary><b>Измененные поля</b></summary>
 
-The tool generates new unique identifiers for:
+Инструмент генерирует новые уникальные идентификаторы для:
 
 - `telemetry.machineId`
 - `telemetry.macMachineId`
@@ -416,73 +414,73 @@ The tool generates new unique identifiers for:
 </details>
 
 <details>
-<summary><b>Manual Auto-Update Disable</b></summary>
+<summary><b>Ручное отключение автоматического обновления</b></summary>
 
-Windows users can manually disable the auto-update feature:
+Пользователи Windows могут вручную отключить функцию автоматического обновления:
 
-1. Close all Cursor processes
-2. Delete directory: `C:\Users\username\AppData\Local\cursor-updater`
-3. Create a file with the same name: `cursor-updater` (without extension)
+1. Закройте все процессы Cursor
+2. Удалите каталог: `C:\Users\username\AppData\Local\cursor-updater`
+3. Создайте файл с тем же именем: `cursor-updater` (без расширения)
 
-macOS/Linux users can try to locate similar `cursor-updater` directory in their system and perform the same operation.
+Пользователи macOS/Linux могут попытаться найти аналогичный каталог `cursor-updater` в своей системе и выполнить ту же операцию.
 
 </details>
 
 <details>
-<summary><b>Safety Features</b></summary>
+<summary><b>Функции безопасности</b></summary>
 
-- ✅ Safe process termination
-- ✅ Atomic file operations
-- ✅ Error handling and recovery
+- ✅ Безопасное завершение процессов
+- ✅ Атомарные файловые операции
+- ✅ Обработка ошибок и восстановление
 </details>
 
 <details>
-<summary><b>Registry Modification Notice</b></summary>
+<summary><b>Уведомление о модификации реестра</b></summary>
 
-> ⚠️ **Important: This tool modifies the Windows Registry**
+> ⚠️ **Важно: Этот инструмент изменяет реестр Windows**
 
-#### Modified Registry
-- Path: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
-- Key: `MachineGuid`
+#### Измененный реестр
+- Путь: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
+- Ключ: `MachineGuid`
 
-#### Potential Impact
-Modifying this registry key may affect:
-- Windows system's unique device identification
-- Device recognition and authorization status of certain software
-- System features based on hardware identification
+#### Потенциальное воздействие
+Изменение этого ключа реестра может повлиять на:
+- Уникальную идентификацию устройства в системе Windows
+- Статус распознавания и авторизации устройства для определенного программного обеспечения
+- Функции системы, основанные на идентификации оборудования
 
-#### Safety Measures
-1. Automatic Backup
-   - Original value is automatically backed up before modification
-   - Backup location: `%APPDATA%\Cursor\User\globalStorage\backups`
-   - Backup file format: `MachineGuid.backup_YYYYMMDD_HHMMSS`
+#### Меры безопасности
+1. Автоматическое резервное копирование
+   - Оригинальное значение автоматически сохраняется перед изменением
+   - Место резервного копирования: `%APPDATA%\Cursor\User\globalStorage\backups`
+   - Формат файла резервного копирования: `MachineGuid.backup_YYYYMMDD_HHMMSS`
 
-2. Manual Recovery Steps
-   - Open Registry Editor (regedit)
-   - Navigate to: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
-   - Right-click on `MachineGuid`
-   - Select "Modify"
-   - Paste the value from backup file
+2. Шаги ручного восстановления
+   - Откройте редактор реестра (regedit)
+   - Перейдите к: `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography`
+   - Щелкните правой кнопкой мыши на `MachineGuid`
+   - Выберите "Изменить"
+   - Вставьте значение из файла резервного копирования
 
-#### Important Notes
-- Verify backup file existence before modification
-- Use backup file to restore original value if needed
-- Administrator privileges required for registry modification
+#### Важные примечания
+- Убедитесь в наличии файла резервного копирования перед изменением
+- Используйте файл резервного копирования для восстановления оригинального значения при необходимости
+- Требуются права администратора для изменения реестра
 </details>
 
 ---
 
-### 📚 Recommended Reading
+### 📚 Рекомендуемое чтение
 
-- [Cursor Issues Collection and Solutions](https://mp.weixin.qq.com/s/pnJrH7Ifx4WZvseeP1fcEA)
-- [AI Universal Development Assistant Prompt Guide](https://mp.weixin.qq.com/s/PRPz-qVkFJSgkuEKkTdzwg)
+- [Сборник проблем и решений Cursor](https://mp.weixin.qq.com/s/pnJrH7Ifx4WZvseeP1fcEA)
+- [Руководство по универсальному помощнику разработчика AI](https://mp.weixin.qq.com/s/PRPz-qVkFJSgkuEKkTdzwg)
 
 ---
 
-##  Support
+##  Поддержка
 
 <div align="center">
-<b>If you find this helpful, consider buying me a spicy gluten snack (Latiao) as appreciation~ 💁☕️</b>
+<b>Если вы считаете это полезным, рассмотрите возможность покупки мне острого глютенового перекуса (Latiao) в знак признательности~ 💁☕️</b>
 <table>
 <tr>
 
@@ -519,7 +517,7 @@ ETC: 0xa2745f4CD5d32310AC01694ABDB28bA32D125a6b
 
 ---
 
-## ⭐ Project Stats
+## ⭐ Статистика проекта
 
 <div align="center">
 
@@ -529,7 +527,7 @@ ETC: 0xa2745f4CD5d32310AC01694ABDB28bA32D125a6b
 
 </div>
 
-## 📄 License
+## 📄 Лицензия
 
 <details>
 <summary><b>MIT License</b></summary>
@@ -548,3 +546,10 @@ copies or substantial portions of the Software.
 
 </details>
 
+
+
+
+---
+для запуска из выбранной директории
+
+iex (Get-Content -Path "./cursor_win_id_modifier.ps1" -Raw)

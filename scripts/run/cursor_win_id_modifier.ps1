@@ -370,13 +370,13 @@ try {
     # 询问是否要禁用自动更新
     Write-Host ""
     Write-Host "$YELLOW[询问]$NC 是否要禁用 Cursor 自动更新功能？"
-    Write-Host "0) 否 - 保持默认设置 (按回车键)"
-    Write-Host "1) 是 - 禁用自动更新"
-    $choice = Read-Host "请输入选项 (0)"
+    Write-Host "0) Нет - сохранить настройки по умолчанию (нажмите Enter)"
+    Write-Host "1) Да - отключить автоматическое обновление"
+    $choice = Read-Host "Пожалуйста, введите опцию (0)"
 
     if ($choice -eq "1") {
         Write-Host ""
-        Write-Host "$GREEN[信息]$NC 正在处理自动更新..."
+        Write-Host "$GREEN[信息]$NC Обработка автоматических обновлений..."
         $updaterPath = "$env:LOCALAPPDATA\cursor-updater"
 
         # 定义手动设置教程
@@ -412,17 +412,17 @@ try {
             if (Test-Path $updaterPath) {
                 # 如果是文件,说明已经创建了阻止更新
                 if ((Get-Item $updaterPath) -is [System.IO.FileInfo]) {
-                    Write-Host "$GREEN[信息]$NC 已创建阻止更新文件,无需再次阻止"
+                    Write-Host "$GREEN[信息]$NC Был создан заблокированный файл обновления, нет необходимости блокировать его снова"
                     return
                 }
                 # 如果是目录,尝试删除
                 else {
                     try {
                         Remove-Item -Path $updaterPath -Force -Recurse -ErrorAction Stop
-                        Write-Host "$GREEN[信息]$NC 成功删除 cursor-updater 目录"
+                        Write-Host "$GREEN[信息]$NC Успешно удален cursor-updater каталог"
                     }
                     catch {
-                        Write-Host "$RED[错误]$NC 删除 cursor-updater 目录失败"
+                        Write-Host "$RED[错误]$NC 删除 cursor-updater Сбой в работе каталога"
                         Show-ManualGuide
                         return
                     }
@@ -432,10 +432,10 @@ try {
             # 创建阻止文件
             try {
                 New-Item -Path $updaterPath -ItemType File -Force -ErrorAction Stop | Out-Null
-                Write-Host "$GREEN[信息]$NC 成功创建阻止文件"
+                Write-Host "$GREEN[信息]$NC Успешно создан заблокированный файл"
             }
             catch {
-                Write-Host "$RED[错误]$NC 创建阻止文件失败"
+                Write-Host "$RED[错误]$NC Не удалось создать заблокированный файл"
                 Show-ManualGuide
                 return
             }
@@ -451,10 +451,10 @@ try {
                     throw "icacls 命令失败"
                 }
                 
-                Write-Host "$GREEN[信息]$NC 成功设置文件权限"
+                Write-Host "$GREEN[信息]$NC Успешно установлены права доступа к файлам"
             }
             catch {
-                Write-Host "$RED[错误]$NC 设置文件权限失败"
+                Write-Host "$RED[错误]$NC Не удалось установить права доступа к файлам"
                 Show-ManualGuide
                 return
             }
@@ -463,34 +463,34 @@ try {
             try {
                 $fileInfo = Get-ItemProperty $updaterPath
                 if (-not $fileInfo.IsReadOnly) {
-                    Write-Host "$RED[错误]$NC 验证失败：文件权限设置可能未生效"
+                    Write-Host "$RED[错误]$NC Ошибка проверки: настройка разрешения доступа к файлам может не вступить в силу"
                     Show-ManualGuide
                     return
                 }
             }
             catch {
-                Write-Host "$RED[错误]$NC 验证设置失败"
+                Write-Host "$RED[错误]$NC Сбой настройки проверки"
                 Show-ManualGuide
                 return
             }
 
-            Write-Host "$GREEN[信息]$NC 成功禁用自动更新"
+            Write-Host "$GREEN[信息]$NC Успешно отключены автоматические обновления"
         }
         catch {
-            Write-Host "$RED[错误]$NC 发生未知错误: $_"
+            Write-Host "$RED[错误]$NC Произошла неизвестная ошибка: $_"
             Show-ManualGuide
         }
     }
     else {
-        Write-Host "$GREEN[信息]$NC 保持默认设置，不进行更改"
+        Write-Host "$GREEN[信息]$NC Сохраняйте настройки по умолчанию и не вносите никаких изменений"
     }
 
     # 保留有效的注册表更新
     Update-MachineGuid
 
 } catch {
-    Write-Host "$RED[错误]$NC 主要操作失败: $_"
-    Write-Host "$YELLOW[尝试]$NC 使用备选方法..."
+    Write-Host "$RED[错误]$NC Основная операция завершилась неудачей: $_"
+    Write-Host "$YELLOW[尝试]$NC Используйте альтернативные методы..."
     
     try {
         # 备选方法：使用 Add-Content
@@ -498,7 +498,7 @@ try {
         $config | ConvertTo-Json | Set-Content -Path $tempFile -Encoding UTF8
         Copy-Item -Path $tempFile -Destination $STORAGE_FILE -Force
         Remove-Item -Path $tempFile
-        Write-Host "$GREEN[信息]$NC 使用备选方法成功写入配置"
+        Write-Host "$GREEN[信息]$NC Используйте альтернативный метод для успешной записи конфигурации"
     } catch {
         Write-Host "$RED[错误]$NC 所有尝试都失败了"
         Write-Host "错误详情: $_"
@@ -542,7 +542,7 @@ function Write-ConfigFile {
 $cursorVersion = Get-CursorVersion
 Write-Host ""
 if ($cursorVersion) {
-    Write-Host "$GREEN[信息]$NC 检测到 Cursor 版本: $cursorVersion，继续执行..."
+    Write-Host "$GREEN[信息]$NC Обнаруженный Cursor релиз: $cursorVersion，Продолжайте выполнять..."
 } else {
-    Write-Host "$YELLOW[警告]$NC 无法检测版本，将继续执行..."
+    Write-Host "$YELLOW[警告]$NC Версия не может быть обнаружена, и выполнение будет продолжено..."
 } 
